@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Homemade+Apple&family=Montserrat:wght@300;400;600;700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+.navBar {
+  background-color: #1c3d5a;
+  display: flex;
+  gap: 60px;
+  height: 60px;
+}
+
+.navBar a {
+  margin: auto 0 auto 50px;
+  text-align: center;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navBar a:hover {
+  color: #f5f5dc;
+}
+
+.imgLogo {
+  height: 60px;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    justify-content: space-between;
+  }
+
+  .navBar a {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .imgLogo {
+    order: -1;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navBar a {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .imgLogo {
+    margin-bottom: 10px;
+  }
+}
